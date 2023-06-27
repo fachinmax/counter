@@ -1,15 +1,24 @@
 {
+  "homepage": "",
   "name": "counter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "source": "./src/index.html",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "parcel",
+    "build": "parcel build --public-url ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "parcel": "^2.9.3"
   }
 }
