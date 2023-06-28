@@ -9,8 +9,6 @@ Al primo accesso l'utente visualizzerà il valore di default (0) successivamente
 
 ## Dagli uno sguardo
 
-Se vuoi vedere realmente come ddddfunziona vai al link
-
 ## Strumenti
 
 Per la realizzazione del sito sono stati utilizzati i linguaggi:
