@@ -9,7 +9,7 @@ Al primo accesso l'utente visualizzerà il valore di default (0) successivamente
 
 ## Dagli uno sguardo
 
-Se vuoi vedere realmente come funziona vai al link [qui](https://fachinmax.github.io/counter)
+Se vuoi vedere realmente come funziona vai al link
 
 ## Strumenti
 
