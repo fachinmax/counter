@@ -2,12 +2,16 @@
 
 ![simple counter](./src/assets/img/Screenshot.png "Counter")
 
-## Caratteristiche
+## Funzionamento
 
 Semplice counter che viene incrementato e decrementato con l'ausilio di tre bottoni: +, -, reset.
-Inoltre l'utente visualizzerà all'accesso, l'ultimo valore registrato.
+Al primo accesso l'utente visualizzerà il valore di default (0) successivamente, agli accessi successivi, l'utente visualizzerà l'ultimo valore impostato.
 
-# Strumenti
+## Dagli uno sguardo
+
+Se vuoi vedere realmente come funziona vai al link [qui](myLib/README.md)
+
+## Strumenti
 
 Per la realizzazione del sito sono stati utilizzati i linguaggi:
 
