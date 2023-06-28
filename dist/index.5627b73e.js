@@ -24,7 +24,7 @@ let elements = [
         "type": "button",
         "class": "button button--up",
         "id": "upButton",
-        "content": "+"
+        "content": "<span>+</span>"
     },
     {
         "type": "button",
@@ -36,7 +36,7 @@ let elements = [
         "type": "button",
         "class": "button button--down",
         "id": "downButton",
-        "content": "-"
+        "content": "<span>-</span>"
     },
     {
         "type": "h1",
