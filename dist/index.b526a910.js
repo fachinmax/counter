@@ -1,9 +1,7 @@
 // function
 function setCount(event) {
-    // event.target is the icon if you click on reset button
-    let btn = event.target.id;
-    if (event.target.nodeName !== "BUTTON") btn = event.target.closest("button").id;
-    switch(btn){
+    // event.target is the icon or span
+    switch(event.target.closest("button").id){
         case "upButton":
             count.up();
             break;
