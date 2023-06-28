@@ -17,6 +17,11 @@ button {
     aspect-ratio: 1;
     background-image: linear-gradient(var(--blue), var(--light-blue));
     border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+        background-image: linear-gradient(var(--light-blue), var(--blue));
+    }
 }
 
 span {
