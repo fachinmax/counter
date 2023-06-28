@@ -1,24 +1,44 @@
 // function
 function setCount(event) {
-    let countValue = parseInt(count.innerHTML);
-    switch(event.target.id){
+    // event.target is the icon if you click on reset button
+    let btn = event.target.id;
+    if (event.target.nodeName !== "BUTTON") btn = event.target.closest("button").id;
+    switch(btn){
         case "upButton":
-            countValue++;
+            count.up();
             break;
         case "resetButton":
-            countValue = 0;
+            count.reset();
             break;
         case "downButton":
-            countValue--;
+            count.down();
             break;
         default:
             return;
     }
-    count.innerHTML = countValue;
-    window.localStorage.setItem("count", countValue);
+    countWindow.innerHTML = count.get();
+    window.localStorage.setItem("count", count.get());
 }
-let count = document.querySelector("#count");
+class Counter {
+    constructor(value = 0){
+        this.count = parseInt(value);
+    }
+    up() {
+        this.count++;
+    }
+    down() {
+        this.count--;
+    }
+    reset() {
+        this.count = 0;
+    }
+    get() {
+        return this.count;
+    }
+}
+let countWindow = document.querySelector("#count");
 let container = document.querySelector("#buttonContainer");
+let count = new Counter(window.localStorage.getItem("count"));
 container.addEventListener("click", setCount);
 container.addEventListener("dblclick", setCount);
 

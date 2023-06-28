@@ -3,8 +3,9 @@
 // get the right user count
 function getCount() {
     let count = window.localStorage.getItem("count");
-    console.log(count);
-    return count ? count : 0;
+    if (count) return count;
+    window.localStorage.setItem("count", 0);
+    return "0";
 }
 // function that transform un object into a element
 function convertObjectsToElements(arrElements) {
@@ -41,7 +42,7 @@ let elements = [
         "type": "h1",
         "class": "count",
         "id": "count",
-        "content": window.localStorage.getItem("count")
+        "content": getCount()
     }
 ];
 // variable that cointain all container
